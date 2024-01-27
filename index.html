@@ -1,0 +1,251 @@
+<html>
+    <head>
+        <title>Job Arrow</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <!---header---->
+        <section id="header">
+            <div class="menu-bar">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <img src="images/logo.png" alt="Logo" width="70" height="70" class="d-inline-block align-text-top">
+                            JOB ARROW
+                          </a>
+                      
+                      <!--<a class="navbar-brand" href="#"><img src="images/logo.png" width="70" height="70"></a>
+                      <span class="navbar-brand mb-0 h1" id="jobarrow">JOB ARROW</span>
+                     <a class="navbar-text" href="#" id="jobarrow">JOB ARROW</a>-->
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="navbar-collapse collapse" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                          <li class="nav-item">
+                            <a class="nav-link" href="alljobs.html">ALL JOBS</a>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              COMPANIES
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                              <li><a class="dropdown-item" href="companies/dell.pdf">DELL</a></li>
+                              <li><a class="dropdown-item" href="companies/google.pdf">GOOGLE</a></li>
+                              <li><a class="dropdown-item" href="companies/amazon.pdf">AMAZON</a></li>
+                              <li><a class="dropdown-item" href="companies/capgemini.pdf">CAP GEMINI</a></li>
+                              <li><a class="dropdown-item" href="companies/cisco.pdf">CISCO</a></li>
+                              <li><a class="dropdown-item" href="companies/Microsoft.pdf">MICROSOFT</a></li>
+                              <li><a class="dropdown-item" href="companies/Oracle.pdf">ORACLE</a></li>
+                              <li><a class="dropdown-item" href="companies/NASDAQ_NFLX_2019.pdf">NETFLIX</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="walkin.html">WALK-IN</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="gov.html">GOV. JOBS</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="intern.html">INTERNSHIP</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="signup.html">SIGN UP</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="about_us.html">ABOUT US</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+        </section> 
+            
+        <!--<div class="container">-->
+            <div class="carousel slide" id="slider" data-bs-ride="carousel">
+            
+            <ol class="carousel-indicators">
+            <li data-bs-target="#slider" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#slider" data-bs-slide-to="1"></li>
+            <li data-bs-target="#slider" data-bs-slide-to="2"></li>
+            <li data-bs-target="#slider" data-bs-slide-to="3"></li>
+            </ol>
+            
+            <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2500" >
+            <img src="images/back.jpg"id="ks">
+            <div class="carousel-caption">
+                <h1>JOB ARROW</h1>
+                <p>JOBS AROUND YOU</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2500" >
+            <img src="images/images (1).jpeg" id="ks">
+            </div>
+            <div class="carousel-item" data-bs-interval="2500" >
+            <img src="images/image3.jpg" id="ks" >
+            </div>
+            <div class="carousel-item" data-bs-interval="2500" >
+                <img src="images/image4.jpg" id="ks" >
+            </div>
+            </div>
+            
+            <a href="#slider" class="carousel-control-prev" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a href="#slider" class="carousel-control-next" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            </a>
+            
+            </div>
+           <!--</div>-->
+
+           <!--<div class="banner text-center">
+                <h1>JOB ARROW</h1>
+                <P>JOBS AROUND YOU</P>                
+            </div>-->
+        
+        <div class="search-job text-center">
+            <input type="text" class="form-control" list="suggest" placeholder="Job Level">
+            <datalist id="suggest">
+                <option>Entry</option>
+                <option>Mid Senior</option>
+                <option>Director</option>
+             </datalist>
+            <input type="text" class="form-control" list="company" placeholder="company">
+            <datalist id="company">
+                <option>AMAZON</option>
+                <option>GOOGLE</option>
+                <option>DELL</option>
+               </datalist>
+            <span class="fa fa-map-marker"></span>
+            <input type="text" class="form-control" list="location" placeholder="location">
+            <datalist id="location">
+                <option>Bangalore</option>
+                <option>Hyderabad</option>
+                <option>Chennai</option>
+               </datalist>
+            <input type="button" class="btn btn-primary" value="Find Job" onClick="myFunction()"/>
+            <script>
+                function myFunction(){
+                  window.location.href="signup.html";
+                }
+            </script>
+              <br><br>
+            <a href="upload.php" class="btn" role="button">UPLOAD RESUME</a>
+        </div>
+        <section id="recruiters">
+            <div class="container text-center">
+                <h3>TOP RECRUITER</h3>
+                <div>
+                    <img src="images/dell.jpg" title="DELL">
+                    <img src="images/google.jpg" title="GOOGLE">
+                    <img src="images/amazon.jpg" title="AMAZON">
+                    <img src="images/capgemini.jpg" title="CAP GEMINI">
+                </div>
+                <div>
+                    <img src="images/cisco.jpg" title="CISCO">
+                    <img src="images/microsoft.jpg" title="MICROSOFT">
+                    <img src="images/oracle.jpg" title="ORACLE">
+                    <img src="images/netflix.jpg" title="NETFLIX">
+                </div>
+            </div>
+        </section>
+        <section id="jobs">
+            <div class="container">
+                <h5>RECENT UPDATES</h5>
+        
+                <div class="company-details">
+                    <div class="job-update">
+                        <h4><b>Seasoned Senior Python Developer(Freshser)</b></h4>
+                        <p>XYZ Solution Pvt Ltd</p>
+                        <i class="fa fa-briefcase"></i><span>0-1 yrs</span><br>
+                        <i class="fa fa-inr"></i><span>3.50--4.00 LPA</span><br>
+                        <i class="fa fa-map-marker"></i><span>Bangalore</span><br>
+                        <p>Skills<i class="fa fa-angle-double-right"></i><small>java</small>
+                            <small>python</small><small>HTML,CSS</small><small>.net</small></p>
+                            <p>Description<i class="fa fa-angle-double-right"></i>This company provides extra bonus if we done any project
+                            and gives gift cards for every festival<a href="#">Read more</a></p>
+                    </div>
+                    <div class="apply-btn">
+                        <button type="button" class="btn btn-primary">APPlY</button> 
+                    </div>
+                </div>
+
+                <ul class="page-link text-center">
+                    <li class="left-arrow">&#8592;</li>
+                    <li class="active">1</li>
+                    <li><a href="gov.html">2</a></li>
+                    <li><a href="intern.html">3</a></li>
+                    <li><a href="alljobs.html">4</a></li>
+                    <li class="right-arrow">&#8594;</li>
+                </ul>
+            </div>
+        </section>
+
+
+        <section id="site-stats">
+            <div class="container text-center">
+                <h3>JOB ARROW SITE STATS</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="stats-box">
+                                    <i class="fa fa-user-o"></i><span><small>100k +</small></span>
+                                    <p>JOB Seekers</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="stats-box">
+                                    <i class="fa fa-slideshare"></i><span><small>500 +</small></span>
+                                    <p>Employers</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="stats-box">
+                                    <i class="fa fa-hand-peace-o"></i><span><small>10k +</small></span>
+                                    <p>Active Jobs</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="stats-box">
+                                    <i class="fa fa-building-o"></i><span><small>400 +</small></span>
+                                    <p>companies</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="app-banner" class="text-center">
+            <h3>Find Jobs On Mobile,Download Job Arrow App</h3>
+            <img src="images/googleplay.JPG">
+            <img src="images/applestore.JPG">
+        </section>
+
+        <section id="footer" class="text-center">
+            <img src="images/logo.png" class="footer-image">
+            <p>find your passionate job in your stream<br>using JOB ARROW</p>
+            <a href="#"><img src="images/googlelogo.jpg"></a>
+            <a href="#"><img src="images/facebook.jpg"></a>
+            <a href="#"><img src="images/github.jpg"></a>
+            <a href="#"><img src="images/linkedin.jpg"></a>
+            <hr>
+            <p>Made with <i class="fa fa-heart"></i> by Kusuma Sareddy</p>
+        </section>
+
+    
+    </body>
+</html>
